@@ -18,14 +18,13 @@ public class Student {
         this.grades.add(grade);
     }
     public double getGradeAverage(){
-        double result = 0;
+        double sum = 0;
         for (int grade : this.getGrades()) {
-            result += grade;
+            sum += grade;
         }
-        return (result / (this.getGrades().size()));
+        return (sum / (this.getGrades().size()));
     }
     public ArrayList<Integer> getGrades(){
         return this.grades;
     }
-
 }
